@@ -4,6 +4,7 @@ import ReactDOM from 'react-dom';
 import App from './App';
 import './index.css';
 import './scss/main.scss';
+import 'core-js/actual';
 
 // import './scss/main.scss';
 
