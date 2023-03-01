@@ -9,6 +9,9 @@ import { useCommentsController } from './hooks/useCommentsController';
 
 const MainWrapper = styled('div')`
   padding: 14px 18px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
 `;
 
 const Root = styled('div')`
