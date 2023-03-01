@@ -2,9 +2,11 @@ import React from 'react';
 
 import { Styled as S } from './CommentSectionStyles';
 import { CommentItem } from './components/CommentItem';
-import { commentMockData } from 'src/mockData/CommentsMockData';
+import { CommentMockData } from 'src/mockData/CommentsMockData';
 
-export const CommentSection: React.FC = () => {
+type PropTypes = { comments: CommentMockData[] };
+
+export const CommentSection: React.FC<PropTypes> = ({ comments }) => {
   return (
     <S.Root>
       <S.HeaderWrapper>
@@ -12,7 +14,7 @@ export const CommentSection: React.FC = () => {
         <a href="">All reviews</a>
       </S.HeaderWrapper>
       <S.CommentSectionContainter>
-        {commentMockData.map((props, i) => {
+        {comments.map((props, i) => {
           return <CommentItem key={i} {...props} />;
         })}
       </S.CommentSectionContainter>

@@ -7,12 +7,6 @@ Styled.Root = styled('div')`
   flex-direction: column;
   align-items: flex-end;
   gap: 8px;
-
-  & > span {
-    font-size: 13px;
-    width: 60px;
-    text-align: center;
-  }
 `;
 
 Styled.ServiceItemContainerWrapper = styled('div')`
@@ -22,6 +16,12 @@ Styled.ServiceItemContainerWrapper = styled('div')`
   flex-direction: column;
   align-items: flex-end;
   gap: 8px;
+
+  & > span {
+    font-size: 13px;
+    width: 60px;
+    text-align: center;
+  }
 `;
 
 Styled.ServiceItemContainer = styled('div')`
