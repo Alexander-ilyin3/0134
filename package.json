@@ -18,11 +18,14 @@
     "typescript": "^4.9.4",
     "web-vitals": "^2.1.4"
   },
+  "homepage": "https://alexander-ilyin3.github.io/0134",
   "scripts": {
     "start": "craco start",
     "build": "craco build",
     "test": "craco test",
-    "eject": "craco eject"
+    "eject": "craco eject",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [
@@ -51,6 +54,7 @@
     "eslint": "^8.32.0",
     "eslint-config-prettier": "^8.6.0",
     "eslint-plugin-prettier": "^4.2.1",
+    "gh-pages": "^5.0.0",
     "jest-styled-components": "^7.1.1",
     "node-sass": "^7.0.3",
     "prettier": "^2.8.3"
