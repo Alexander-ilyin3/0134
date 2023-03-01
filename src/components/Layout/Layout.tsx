@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 
+import { CommentSection } from '../Comments/CommentSection';
 import { Header } from '../Header/Header';
 import { Services } from '../Services/Services';
 
@@ -17,6 +18,7 @@ export const Layout: React.FC = () => {
     <MainWrapper>
       <Header />
       <Services />
+      <CommentSection />
     </MainWrapper>
   );
 };

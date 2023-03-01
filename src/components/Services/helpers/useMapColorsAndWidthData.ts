@@ -21,13 +21,9 @@ export const useMapColorsAndWidthData = (services: ServicesMockData[]) => {
       return 0;
     });
 
-    console.log({ ordered });
-
     const biggestAmount = ordered.at(0)?.amount || 1;
 
-    console.log({ biggestAmount });
     const mapped = ordered.map((service) => {
-      console.log('dadad', (100 * service.amount) / biggestAmount);
       return {
         ...service,
         width: Math.round((100 * service.amount) / biggestAmount),
