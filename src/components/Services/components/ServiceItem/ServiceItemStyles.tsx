@@ -4,7 +4,9 @@ import { ServiceItemProgressBarColors } from '../../models/ServiceItemRenderType
 
 type StyledRootProps = { width: number; color: ServiceItemProgressBarColors };
 
-export const Root = styled('div')`
+export const Styled = () => null;
+
+Styled.Root = styled('div')`
   display: flex;
   justify-content: space-between;
 
@@ -17,11 +19,11 @@ export const Root = styled('div')`
   }
 `;
 
-export const ProgressBarWrapper = styled('div')`
+Styled.ProgressBarWrapper = styled('div')`
   flex: 1;
 `;
 
-export const ProgressBar = styled('div')`
+Styled.ProgressBar = styled('div')`
   width: ${(props: StyledRootProps) => props.width}%;
   height: 24px;
   background-color: ${(props: StyledRootProps) => props.color};

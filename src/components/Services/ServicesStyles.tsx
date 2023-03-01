@@ -1,6 +1,8 @@
 import styled from 'styled-components';
 
-export const Root = styled('div')`
+export const Styled = () => null;
+
+Styled.Root = styled('div')`
   display: flex;
   flex-direction: column;
   align-items: flex-end;
@@ -13,7 +15,7 @@ export const Root = styled('div')`
   }
 `;
 
-export const ServiceItemContainerWrapper = styled('div')`
+Styled.ServiceItemContainerWrapper = styled('div')`
   width: 325px;
 
   display: flex;
@@ -22,7 +24,7 @@ export const ServiceItemContainerWrapper = styled('div')`
   gap: 8px;
 `;
 
-export const ServiceItemContainer = styled('div')`
+Styled.ServiceItemContainer = styled('div')`
   width: 100%;
 
   display: flex;
@@ -38,7 +40,7 @@ export const ServiceItemContainer = styled('div')`
   padding: 12px 0;
 `;
 
-export const TotalBar = styled('div')`
+Styled.TotalBar = styled('div')`
   width: 100%;
 
   font-size: 16px;

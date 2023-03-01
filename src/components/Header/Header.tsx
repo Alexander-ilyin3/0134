@@ -1,21 +1,21 @@
 import React from 'react';
 
-import { Avatar, NamePosition, Root, PersonDescription, DescriptionBlock } from './HeaderStyles';
+import { Styled as S } from './HeaderStyles';
 
 export const Header: React.FC = () => {
   return (
-    <Root>
-      <Avatar src="image/Avatar.png" />
-      <PersonDescription>
-        <NamePosition>
+    <S.Root>
+      <S.Avatar src="image/Avatar.png" />
+      <S.PersonDescription>
+        <S.NamePosition>
           <span>Eva Jonson</span>
           <span>Sales Manager</span>
-        </NamePosition>
-        <DescriptionBlock>
+        </S.NamePosition>
+        <S.DescriptionBlock>
           I will find the best offers for you. <br />
           My services are absolutely free.
-        </DescriptionBlock>
-      </PersonDescription>
-    </Root>
+        </S.DescriptionBlock>
+      </S.PersonDescription>
+    </S.Root>
   );
 };

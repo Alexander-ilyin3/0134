@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { Root, ServiceItemContainer, TotalBar, ServiceItemContainerWrapper } from './ServicesStyles';
+import { Styled as S } from './ServicesStyles';
 import { ServiceItem } from './components/ServiceItem/ServiceItem';
 import { useCountServicesTotal } from './helpers/useCountServicesTotal';
 import { useMapColorsAndWidthData } from './helpers/useMapColorsAndWidthData';
@@ -10,19 +10,19 @@ export const Services: React.FC = () => {
   const mappedWithColorsAndWidthData = useMapColorsAndWidthData(ServicesMockData);
   const total = useCountServicesTotal(ServicesMockData);
   return (
-    <Root>
-      <ServiceItemContainerWrapper>
+    <S.Root>
+      <S.ServiceItemContainerWrapper>
         <span>Services</span>
-        <ServiceItemContainer>
+        <S.ServiceItemContainer>
           {mappedWithColorsAndWidthData.map((props, i) => {
             return <ServiceItem key={i} {...props}></ServiceItem>;
           })}
-        </ServiceItemContainer>
-        <TotalBar>
+        </S.ServiceItemContainer>
+        <S.TotalBar>
           <span>Total</span>
           <span>{total}</span>
-        </TotalBar>
-      </ServiceItemContainerWrapper>
-    </Root>
+        </S.TotalBar>
+      </S.ServiceItemContainerWrapper>
+    </S.Root>
   );
 };

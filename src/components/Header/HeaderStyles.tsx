@@ -1,6 +1,8 @@
 import styled from 'styled-components';
 
-export const Root = styled('div')`
+export const Styled = () => null;
+
+Styled.Root = styled('div')`
   min-width: 360px;
   max-width: 720px;
 
@@ -10,7 +12,7 @@ export const Root = styled('div')`
   background-color: #ffffff;
 `;
 
-export const Avatar = styled('div')`
+Styled.Avatar = styled('div')`
   width: 124px;
   height: 124px;
 
@@ -23,7 +25,7 @@ export const Avatar = styled('div')`
   z-index: 1;
 `;
 
-export const NamePosition = styled('div')`
+Styled.NamePosition = styled('div')`
   display: flex;
   flex-direction: column;
   gap: 4px;
@@ -40,7 +42,7 @@ export const NamePosition = styled('div')`
   }
 `;
 
-export const PersonDescription = styled('div')`
+Styled.PersonDescription = styled('div')`
   display: flex;
   flex-direction: column;
   flex: 1;
@@ -49,7 +51,7 @@ export const PersonDescription = styled('div')`
   padding-top: 16px;
 `;
 
-export const DescriptionBlock = styled('div')`
+Styled.DescriptionBlock = styled('div')`
   color: #333333;
   font-size: 14px;
   background-color: #fffbc8;
