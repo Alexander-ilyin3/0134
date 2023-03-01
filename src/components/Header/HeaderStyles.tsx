@@ -18,6 +18,7 @@ export const Avatar = styled('div')`
 
   background-image: url(${(props: { src: string }) => props.src});
   background-position: center 35%;
+  background-size: cover;
 
   z-index: 1;
 `;

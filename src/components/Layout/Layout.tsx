@@ -2,6 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 
 import { Header } from '../Header/Header';
+import { Services } from '../Services/Services';
 
 const MainWrapper = styled('div')`
   min-width: 360px;
@@ -15,6 +16,7 @@ export const Layout: React.FC = () => {
   return (
     <MainWrapper>
       <Header />
+      <Services />
     </MainWrapper>
   );
 };
