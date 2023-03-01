@@ -3,9 +3,6 @@ import styled from 'styled-components';
 export const Styled = () => null;
 
 Styled.Root = styled('div')`
-  min-width: 360px;
-  max-width: 720px;
-
   display: flex;
   gap: 16px;
 
